@@ -10,7 +10,7 @@ const Cart = ({ cartItems, onRemoveFromCart, onClearCart }) => {
         e.preventDefault();
         if (banco.trim() && nombre.trim()) {
             try {
-                const response = await fetch('http://localhost:5000/api/compradores', {
+                const response = await fetch('https://pagina-web-crud-backend.onrender.com/api/compradores', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
