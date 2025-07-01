@@ -8,7 +8,7 @@ const AdminCompras = () => {
 
     // Obtener todas las compras
     const fetchCompras = async () => {
-        const res = await fetch('http://localhost:5000/api/compradores');
+        const res = await fetch('https://pagina-web-crud-backend.onrender.com/api/compradores');
         const data = await res.json();
         setCompras(data);
     };
@@ -20,7 +20,7 @@ const AdminCompras = () => {
     // Eliminar una compra
     const handleDelete = async (id) => {
         if (window.confirm('¿Seguro que quieres eliminar esta compra?')) {
-            await fetch(`http://localhost:5000/api/compradores/${id}`, { method: 'DELETE' });
+            await fetch(`https://pagina-web-crud-backend.onrender.com/api/compradores/${id}`, { method: 'DELETE' });
             fetchCompras();
         }
     };
@@ -34,7 +34,7 @@ const AdminCompras = () => {
 
     // Guardar edición
     const handleSave = async (id) => {
-        await fetch(`http://localhost:5000/api/compradores/${id}`, {
+        await fetch(`https://pagina-web-crud-backend.onrender.com/api/compradores/${id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nombre: editNombre, banco: editBanco }),
