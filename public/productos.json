@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Perro Caliente Clásico",
+    "descripcion": "Pan suave, salchicha, salsas y papas trituradas.",
+    "precio": 3.5,
+    "imagen": "/perro.jpg",
+    "categoria": "perro"
+  },
+  {
+    "id": 2,
+    "nombre": "Perro Caliente Especial",
+    "descripcion": "Con queso, tocineta y salsas especiales.",
+    "precio": 4.5,
+    "imagen": "/perro especial.jpg",
+    "categoria": "perro"
+  },
+  {
+    "id": 3,
+    "nombre": "Hamburguesa Sencilla",
+    "descripcion": "Carne de res, lechuga, tomate, queso y salsas.",
+    "precio": 4.0,
+    "imagen": "/hamburguesa.jpg",
+    "categoria": "hamburguesa"
+  },
+  {
+    "id": 4,
+    "nombre": "Hamburguesa Doble",
+    "descripcion": "Doble carne, doble queso, vegetales y salsas.",
+    "precio": 5.5,
+    "imagen": "/hamburguesa doble.jpg",
+    "categoria": "hamburguesa"
+  }
+] 
